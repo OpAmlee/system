@@ -1,0 +1,23 @@
+[connection]
+id=Texas Ace Conference
+uuid=2284b844-b88b-4fba-aa40-c7c378cbab81
+type=wifi
+interface-name=wlp2s0
+
+[wifi]
+mode=infrastructure
+ssid=Texas Ace Conference
+
+[wifi-security]
+auth-alg=open
+key-mgmt=wpa-psk
+psk=8172406701
+
+[ipv4]
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+method=auto
+
+[proxy]

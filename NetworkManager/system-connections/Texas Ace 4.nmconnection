@@ -1,0 +1,23 @@
+[connection]
+id=Texas Ace 4
+uuid=c21d1688-e7db-4f5b-9a4d-2f06d163744d
+type=wifi
+interface-name=wlp2s0
+
+[wifi]
+mode=infrastructure
+ssid=Texas Ace 4
+
+[wifi-security]
+auth-alg=open
+key-mgmt=wpa-psk
+psk=8172406701
+
+[ipv4]
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+method=auto
+
+[proxy]

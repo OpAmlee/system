@@ -1,0 +1,8 @@
+#!/bin/sh
+#THIS IS A GRUB PROXY SCRIPT
+'/etc/grub.d/proxifiedScripts/linux' | /etc/grub.d/bin/grubcfg_proxy "+*
++#text
++'Arch Linux'~79de05735d9acfdbf1a0a71950984aa6~ as 'Arch 28'
++'SUBMENU' as 'Advanced options for Arch Linux'{+'Advanced options for Arch Linux'/*, +'Advanced options for Arch Linux'/'Arch Linux, with Linux linux'~f9f868541299287ee3c16e8987a4924c~ as 'Recovery'}
+-'SUBMENU' as ''{-'Advanced options for Arch Linux'/'Arch Linux, with Linux linux (fallback initramfs)'~22d9f9efb0a1f7ad813ef40b8759e855~}
+"

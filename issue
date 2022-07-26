@@ -1,0 +1,11 @@
+	\e[31m\ \l \e[m\ \e[36@ \n \t \e[m \e[34m\ \d \e[m
+
+
+\e[36m\
+	Access to this system is for authorized persons only. 
+    Unauthorized use or access is regarded as a criminal act and is subject to civil and criminal prosecution.\e[m\
+
+
+
+ setterm -cursor on  
+[?12l[?25h

@@ -1,0 +1,18 @@
+[connection]
+id=iPhone (69) 1
+uuid=9955dd77-8a48-4d85-a576-46c018fc3cfb
+type=wifi
+interface-name=wlp2s0
+
+[wifi]
+mode=infrastructure
+ssid=iPhone (69)
+
+[ipv4]
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+method=auto
+
+[proxy]
