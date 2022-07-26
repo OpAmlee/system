@@ -28,7 +28,7 @@ sgx:!*::
 storage:!*::
 tty:!*::
 uucp:!*::trg
-video:!*::sddm
+video:!*::sddm,trg
 users:!*::
 systemd-journal:!*::
 rfkill:!*::

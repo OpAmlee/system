@@ -19,7 +19,6 @@ rtkit:x:133:133:RealtimeKit:/proc:/usr/bin/nologin
 avahi:x:974:974:Avahi mDNS/DNS-SD daemon:/:/usr/bin/nologin
 git:x:973:973:git daemon user:/:/usr/bin/git-shell
 trg:x:1000:1000::/home/trg:/bin/bash
-adam:x:1001:1001::/home/adam:/bin/bash
 dnsmasq:x:972:972:dnsmasq daemon:/:/usr/bin/nologin
 usbmux:x:140:140:usbmux user:/:/usr/bin/nologin
 cups:x:209:209:cups helper user:/:/usr/bin/nologin
