@@ -1,5 +1,7 @@
 #	$OpenBSD: sshd_config,v 1.104 2021/07/02 05:11:21 dtucker Exp $
-
+#       ╔╦╗╦═╗╔═╗  \│/  ╔═╗╔═╗╔╗╔╔═╗╦╔═╗  ╔═╗╔═╗╦ ╦╔╦╗
+#        ║ ╠╦╝║ ╦  ─ ─  ║  ║ ║║║║╠╣ ║║ ╦  ╚═╗╚═╗╠═╣ ║║
+#        ╩ ╩╚═╚═╝  /│\  ╚═╝╚═╝╝╚╝╚  ╩╚═╝  ╚═╝╚═╝╩ ╩═╩╝
 # This is the sshd server system-wide configuration file.  See
 # sshd_config(5) for more information.
 
@@ -35,7 +37,7 @@
 #MaxSessions 10
 
 #PubkeyAuthentication yes
-
+PasswordAuthentication yes
 # The default is to check both .ssh/authorized_keys and .ssh/authorized_keys2
 # but this is overridden so installations will only check .ssh/authorized_keys
 AuthorizedKeysFile	.ssh/authorized_keys
@@ -58,7 +60,7 @@ AuthorizedKeysFile	.ssh/authorized_keys
 #PermitEmptyPasswords no
 
 # Change to no to disable s/key passwords
-KbdInteractiveAuthentication no
+#KbdInteractiveAuthentication yes
 
 # Kerberos options
 #KerberosAuthentication no
@@ -104,7 +106,7 @@ PrintMotd no # pam does that
 
 # no default banner path
 #Banner none
-
+Banner /etc/issue
 # override default of no subsystems
 Subsystem	sftp	/usr/lib/ssh/sftp-server
 
@@ -114,3 +116,8 @@ Subsystem	sftp	/usr/lib/ssh/sftp-server
 #	AllowTcpForwarding no
 #	PermitTTY no
 #	ForceCommand cvs server
+
+
+#AuthenticationMethods publickey keyboard-interactive:pam
+
+AuthenticationMethods publickey

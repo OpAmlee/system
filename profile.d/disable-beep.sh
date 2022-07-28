@@ -1,1 +1,1 @@
-setterm -blength 0
+#setterm -blength 0
